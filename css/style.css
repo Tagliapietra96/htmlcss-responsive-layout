@@ -106,7 +106,7 @@ button.center{
 button.primary{
     color: var(--color-basic);
     background-color: var(--color-primary);
-    padding: var(--spacing-xsmall) calc(1 * var(--spacing-small));
+    padding: var(--spacing-xsmall) var(--spacing-small);
 }
 
 button.secondary{
@@ -277,7 +277,8 @@ a{
 }
 
 .pdd_l-r-s{
-    padding: 0 var(--spacing-small);
+    padding-left: var(--spacing-small);
+    padding-right: var(--spacing-small);
 }
 
 .pdd_t-s{
@@ -657,7 +658,9 @@ section.secondary{
 }
 
 section.aboutus h3,
-section.testimonials h3{
+section.testimonials h3,
+section.benefits h2,
+section.benefits h4{
     color: var(--color-secondary);
 }
 
@@ -676,7 +679,6 @@ section.introduction img{
 /* ------------------------------------ */
 
 /* testimonials */
-
 [src*="testimonial"]{
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -686,7 +688,12 @@ section.testimonials i{
     font-size: 1.5rem;
 }
 
+/* ------------------------------------ */
 
+/* Benefits */
+section.benefits h3{
+    font-size: 3rem;
+}
 
 /* ************************************************************************ */
 
@@ -736,6 +743,10 @@ footer{
     section.testimonials .card{
         text-align: left;
         align-items: center;
+    }
+
+    section.testimonials .card img{
+        width: 90%;
     }
 }
 
