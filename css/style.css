@@ -638,14 +638,34 @@ footer{
 /* ************************************************************************ */
 
 @media  screen and (min-width:768px) {
+    html{
+        font-size: 14px;
+    }
+
     .container{
         max-width: 720px;
+    }
+
+    .col-m-2_3{
+        flex-basis: calc(var(--proportion_1_3) * 2);
+    }
+
+    .col-m-1_3{
+        flex-basis: var(--proportion_1_3);
     }
 }
 
 @media  screen and (min-width:992px) {
+    html{
+        font-size: 18px;
+    }
+
     .container{
         max-width: 950px;
+    }
+
+    .col-l-1_2{
+        flex-basis: var(--proportion-1_2);
     }
     
 }
