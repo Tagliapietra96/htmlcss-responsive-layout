@@ -98,11 +98,14 @@ button{
     border-radius: var(--spacing-medium);
 }
 
+button.center{
+    display: block;
+    margin: auto;
+}
+
 button.primary{
     color: var(--color-basic);
     background-color: var(--color-primary);
-    display: block;
-    margin: auto;
     padding: var(--spacing-xsmall) calc(1 * var(--spacing-small));
 }
 
@@ -114,6 +117,13 @@ button.secondary{
 button.big{
     padding: var(--spacing-small) var(--spacing-medium);
     color: var(--color-secondary);
+}
+
+button.round,
+.round{
+    border-radius: 50%;
+    color: var(--color-basic-invert);
+    overflow: hidden;
 }
 
 img{
@@ -143,7 +153,7 @@ a{
 }
 
 .card{
-	border-radius: var(--spacing-xsmall);
+	border-radius: var(--spacing-small);
     padding: var(--spacing-small);
     height: 100%;
 }
@@ -646,6 +656,11 @@ section.secondary{
     color: var(--color-basic);
 }
 
+section.aboutus h3,
+section.testimonials h3{
+    color: var(--color-secondary);
+}
+
 /* ------------------------------------ */
 
 /* introduction */
@@ -657,6 +672,21 @@ section.introduction img{
     position: relative;
     top: calc(var(--spacing-xxsmall) + var(--spacing-small));
 }
+
+/* ------------------------------------ */
+
+/* testimonials */
+
+[src*="testimonial"]{
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+section.testimonials i{
+    font-size: 1.5rem;
+}
+
+
 
 /* ************************************************************************ */
 
@@ -745,5 +775,14 @@ footer{
     section.introduction img{
         position: relative;
         top: 50%;
+    }
+
+    section.planning .col:last-of-type{
+        align-self: flex-end;
+        padding: unset;
+    }
+
+    section.planning img.small{
+        width: 55%;
     }
 }
