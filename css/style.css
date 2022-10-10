@@ -71,6 +71,7 @@ h5{
 /* Text */
 p{
     font-size: 1rem;
+    line-height: calc(.8 * var(--spacing-small));
 }
 
 p.b_invert{
@@ -88,7 +89,7 @@ li{
 
 /* Buttons - Links - imgs */
 button{
-    padding: var(--spacing-xsmall) calc(2 * var(--spacing-xsmall));
+    padding: var(--spacing-xsmall) calc(3 * var(--spacing-xxsmall));
     background-color: var(--color-basic);
     text-align: center;
     color: var(--color-basic-invert);
@@ -100,6 +101,9 @@ button{
 button.primary{
     color: var(--color-basic);
     background-color: var(--color-primary);
+    display: block;
+    margin: auto;
+    padding: var(--spacing-xsmall) calc(1 * var(--spacing-small));
 }
 
 button.secondary{
@@ -162,6 +166,10 @@ a{
 /* Flex */
 .row.wrap{
 	flex-wrap: wrap;
+}
+
+.row.center{
+    align-items: center;
 }
 
 .row.mrg-fix{
@@ -612,6 +620,17 @@ header{
     left: 0;
 }
 
+.tool-bar{
+    display: none;
+}
+
+header a{
+    color: var(--color-basic);
+    text-decoration: none;
+    padding: var(--spacing-xsmall);
+    
+}
+
 /* ************************************************************************ */
 
 /* Main */
@@ -623,6 +642,13 @@ section{
 section.secondary{
     background-color: var(--color-secondary);
     color: var(--color-basic);
+}
+
+/* ------------------------------------ */
+
+/* introduction */
+section.introduction p{
+    color: var(--color-basic-invert);
 }
 
 /* ************************************************************************ */
@@ -639,7 +665,7 @@ footer{
 
 @media  screen and (min-width:768px) {
     html{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .container{
@@ -655,7 +681,7 @@ footer{
     }
 
     .col-m-1_2{
-        flex-basis: var(--proportion_1_2);
+        flex-basis: var(--proportion-1_2);
     }
 
     .col-m-3_5{
@@ -673,7 +699,7 @@ footer{
 
 @media  screen and (min-width:992px) {
     html{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .container{
@@ -699,5 +725,13 @@ footer{
     .box{
         width: 70%;
         margin: 0 auto;
+    }
+
+    .tool-bar{
+        display: block;
+    }
+
+    .hamburger{
+        display: none;
     }
 }
