@@ -732,6 +732,11 @@ footer{
     .pdd-m-xass-medium{
         padding: 0 var(--spacing-medium);
     }
+
+    section.testimonials .card{
+        text-align: left;
+        align-items: center;
+    }
 }
 
 @media  screen and (min-width:992px) {
