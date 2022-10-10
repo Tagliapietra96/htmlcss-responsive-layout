@@ -39,7 +39,7 @@
 }
 /* Rem reset */
 html{
-	font-size: 15px;
+	font-size: 10px;
 }
 /* Font reset */
 body{
@@ -143,9 +143,19 @@ a{
     padding: var(--spacing-xsmall);
 }
 
+.card.basic{
+    background-color: var(--color-basic);
+    color: var(--color-basic-invert);
+}
+
 .card.primary{
     background-color: var(--color-primary-light);
     color: var(--color-primary);
+}
+
+.card.secondary{
+    background-color: var(--color-secondary);
+    color: var(--color-basic);
 }
 /* ------------------------------------ */
 
