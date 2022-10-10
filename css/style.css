@@ -154,10 +154,13 @@ a{
 	flex-wrap: wrap;
 }
 
+.row.mrg-fix{
+    margin: calc(var(--spacing-xxsmall) * (-1));
+}
+
 .row{
     display: flex;
     justify-content: space-between;
-    margin: calc(var(--spacing-xxsmall) * (-1));
 }
 
 .col{
@@ -604,6 +607,7 @@ header{
 /* Main */
 section{
     color: var(--color-basic-invert);
+    padding: var(--spacing-medium) 0;
 }
 
 section.secondary{
