@@ -590,9 +590,13 @@ a{
 /* ************************************************************************ */
 
 /* Header */
-header.nav{
+header{
     background-color: var(--color-primary);
     color: var(--color-basic);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 /* ************************************************************************ */
