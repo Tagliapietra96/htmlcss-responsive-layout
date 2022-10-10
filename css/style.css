@@ -144,7 +144,8 @@ a{
 
 .card{
 	border-radius: var(--spacing-xsmall);
-    padding: var(--spacing-xsmall);
+    padding: var(--spacing-small);
+    height: 100%;
 }
 
 .card.basic{
@@ -618,6 +619,7 @@ header{
     top: 0;
     right: 0;
     left: 0;
+    z-index: 10;
 }
 
 .tool-bar{
@@ -651,6 +653,11 @@ section.introduction p{
     color: var(--color-basic-invert);
 }
 
+section.introduction img{
+    position: relative;
+    top: calc(var(--spacing-xxsmall) + var(--spacing-small));
+}
+
 /* ************************************************************************ */
 
 /* Footer */
@@ -663,13 +670,13 @@ footer{
 /*                             Media Query                                  */
 /* ************************************************************************ */
 
-@media  screen and (min-width:768px) {
+@media  screen and (min-width:600px) {
     html{
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .container{
-        max-width: 720px;
+        max-width: 580px;
     }
 
     .col-m-2_3{
@@ -733,5 +740,10 @@ footer{
 
     .hamburger{
         display: none;
+    }
+
+    section.introduction img{
+        position: relative;
+        top: 50%;
     }
 }
