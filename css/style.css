@@ -749,6 +749,10 @@ footer{
     color: var(--color-basic);
 }
 
+footer a{
+    color: var(--color-secondary);
+}
+
 /* ************************************************************************ */
 /*                             Media Query                                  */
 /* ************************************************************************ */
@@ -784,6 +788,10 @@ footer{
 
     .pdd-m-xass-medium{
         padding: 0 var(--spacing-medium);
+    }
+
+    .pdd-m-xass-large{
+        padding: 0 var(--spacing-xlarge);
     }
 
     section.testimonials .card{
