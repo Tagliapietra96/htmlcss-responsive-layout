@@ -756,6 +756,16 @@ footer a{
 /* ************************************************************************ */
 /*                             Media Query                                  */
 /* ************************************************************************ */
+@media screen and (min-width:560px) {
+    .container{
+        max-width: 520px;
+    }
+
+    .col-s-1_2{
+        flex-basis: var(--proportion-1_2);
+    }
+
+}
 
 @media  screen and (min-width:600px) {
     html{
@@ -809,6 +819,16 @@ footer a{
         font-size: 4rem;
     }
 
+    section.planning .col:last-of-type{
+        align-self: flex-end;
+        padding: unset;
+    }
+
+    section.planning img.small{
+        width: 55%;
+    }
+
+
 }
 
 @media  screen and (min-width:992px) {
@@ -858,15 +878,6 @@ footer a{
         top: 50%;
     }
 
-    section.planning .col:last-of-type{
-        align-self: flex-end;
-        padding: unset;
-    }
-
-    section.planning img.small{
-        width: 55%;
-    }
-
     section.aboutus h2{
         font-size: 5rem;
     }
@@ -875,4 +886,18 @@ footer a{
         font-size: 4rem;
     }
 
+}
+
+@media screen and (min-width:1200px) {
+    .container{
+        max-width: 1180;
+    }
+
+    .col-xl-1_3{
+        flex-basis: var(--proportion_1_3);
+    }
+
+    .col-xl-1_1{
+        flex-basis: 100%;
+    }
 }
