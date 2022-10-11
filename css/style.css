@@ -835,6 +835,10 @@ footer a{
     .pdd-l-xass-medium{
         padding: 0 var(--spacing-medium);
     }
+    
+    .pdd-l-xass-large{
+        padding: 0 var(--spacing-large);
+    }
 
     .box{
         width: 70%;
