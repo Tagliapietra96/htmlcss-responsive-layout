@@ -654,6 +654,26 @@ header a{
     
 }
 
+header input{
+    display: none;
+}
+
+header input:checked + .tool-bar{
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    
+}
+
+header input:checked + .tool-bar ul{
+    justify-content: center;
+    gap: 1rem;
+}
 /* ************************************************************************ */
 
 /* Main */
@@ -863,6 +883,12 @@ footer a{
     .box{
         width: 70%;
         margin: 0 auto;
+    }
+
+    header input:checked + .tool-bar{
+        position: static;
+        padding: unset;
+        border: 0;
     }
 
     .tool-bar{
